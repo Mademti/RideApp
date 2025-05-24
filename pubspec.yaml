@@ -1,0 +1,36 @@
+name: uber_app
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  supabase_flutter: ^2.9.0
+  google_maps_flutter: ^2.12.2 # this dependency is used to show the map
+  geolocator: ^14.0.0 # this dependency is used to get the current location
+  duration: ^4.0.3 # this dependency is used to show the duration of the trip
+  intl: ^0.20.2 # this dependency is used to format the date and time
+
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
