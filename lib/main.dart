@@ -10,10 +10,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: GoogleMap(
+        // appBar: AppBar(title: Text('Google Maps Example')),
+        body: const GoogleMap(
           initialCameraPosition: CameraPosition(
             target: LatLng(37.7749, -122.4194), // San Francisco coordinates
             zoom: 10,
